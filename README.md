@@ -1,7 +1,3 @@
-Sure! Below is a detailed README that provides information about the code snippet you've provided, including installation instructions, utility, a practical use case, and a guide on how to use it.
-
----
-
 # Model REVOLVER
 
 Model REVOLVER (Rapid Evolution Via Optimized-List Viewer Evaluated Response) is a Python script designed to merge and evaluate two machine learning models using Hugging Face's Transformers. The tool makes `x` cycles of model mergers, reads prompts from a text file, generates responses, and saves relevant data to individual text files. When the cycles are complete, the system notifies the user to review the outputs, allowing them to choose the cycle number that best fits the model they want to assemble.
