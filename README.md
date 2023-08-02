@@ -1,6 +1,6 @@
 # Model REVOLVER
 
-Model REVOLVER (Rapid Evolution Via Optimized-List Viewer Evaluated Response) is a Python script designed to rapidly merge a user selected pair of models on a semi randomized basis and give the end user the power to evaluate the desired results and pick from a pool of potentials. The tool makes `x` cycles of model merges, reads prompts from a text file, generates responses, and saves relevant data to individual text files. When the cycles are complete, the system notifies the user to review the outputs, allowing them to choose the cycle number that best fits the model they want to assemble, which the system completes automatically for the user's convenience.
+Model REVOLVER (Rapid Evolution Via Optimized-List Viewer Evaluated Response) is a Python script designed to rapidly merge a user selected pair of language models on a semi randomized basis and give the end user the power to evaluate the desired results and pick from a pool of potentials. The tool makes `x` cycles of model merges, reads prompts from a text file, generates responses, and saves relevant data to individual text files. When the cycles are complete, the system notifies the user to review the outputs, allowing them to choose the cycle number that best fits the model they want to assemble, which the system completes automatically for the user's convenience.
 
 ## Table of Contents
 
