@@ -1,0 +1,3 @@
+### Instruction:
+Replace text sandwiched here if you want your prompt to be an instruction in Alpaca format - or erase all this and make the prompt whatever needed.
+### Response:
