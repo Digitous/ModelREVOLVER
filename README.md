@@ -87,7 +87,4 @@ Vague potential to have a lightweight LLM auto-judge outputs based on what the u
 ## Friendly Message
 
 Feel free to contact me with insights and feedback. After all, I'm just an idiot with a keyboard who doesn't know when to quit. My ear is open to ideas.
-
----
-
-Feel free to modify the README to include additional details or sections as needed for your project.
+I run CalderaAI on HuggingFace and release models under my name as well as under Caldera. Also check out the hard work of KoboldAI on HuggingFace - if you visit their discord they are the friendliest group of Kobolds one could ever hope to meet.
