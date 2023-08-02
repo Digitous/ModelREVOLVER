@@ -59,20 +59,20 @@ Model REVOLVER can be used by researchers, data scientists, and developers who w
 ### Example Command
 
 ```bash
-python model_revolver.py --firstmodel /path/to/first/model --secondmodel /path/to/second/model --mergedpath /path/to/save/merged/model
+python model_revolver.py --firstmodel /path/to/first/model --secondmodel /path/to/second/model --mergedpath /path/to/save/merged/model --cycles 10
 ```
-Highly recommend making a .bat or .sh to make the process easier; system is command line based for semi automation as well as convenience purposes for those who do not have a GUI interface.
+To keep things simple, it is highly recommend to make a .bat or .sh to make the process easier; system is command line based for semi automation as well as convenience purposes for those who do not have a GUI interface. Full folder path when selecting models in command line is recommended.
 
 ### Workflow
 
 1. **Merge Models:** Combines layers of two models based on randomly generated merge ratios.
-2. **Generate Responses:** Uses the merged model to generate responses to prompts from `prompts.txt`.
+2. **Generate Responses:** Uses the merged model to generate five responses to prompt from `prompts.txt`.
 3. **Review Outputs:** After all cycles, users review the outputs and select the best cycle.
 4. **Recreate Model:** The selected model is recreated and saved based on the user's choice.
 
 ## License
 
-This project is open-source and available under the [MIT License](LICENSE).
+I don't know anything about licenses. Do whatever you want with it, choose to be cool and give me credit, or don't. I don't really care. Enjoy mixtuning. -Digitous
 
 ---
 
