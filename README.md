@@ -26,23 +26,23 @@ Model REVOLVER (Rapid Evolution Via Optimized-List Viewer Evaluated Response) is
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/model-revolver.git
+   git clone https://github.com/Digitous/ModelREVOLVER.git
    cd model-revolver
    ```
 
 2. **Install the required libraries:**
 
    ```bash
-   pip install transformers colorama numpy datasets flask requests
+   pip install transformers colorama numpy datasets
    ```
 
 3. **Download the models you want to merge and place them in appropriate directories.**
 
-4. **Create a text file named `prompts.txt` containing the prompts for evaluation.**
+4. **Create a text file named `prompts.txt` containing the prompts for evaluation; Alpaca and Vicuna as well as any multiline instruct or non instruct prompt works as the entire prompts.txt is taken as the target prompt.**
 
 ## Utility
 
-Model REVOLVER merges two pre-trained models, evaluating them through cycles to generate responses based on input prompts. It enables users to iteratively merge models and select the best combination based on their preferences.
+Model REVOLVER empowers your model merge using order through chaos; you define the prompt in prompts.txt, then in command line select two models and the number of cycles - cycles are the number of times the script will merge using randomized ratios per layer. Think of it as {model A -> model B} ratios determine how much A is injected into B per-layer. The system will automatically load both models to CPU memory and model B will be modified in memory by system selected ratios. Everything is recorded to text files from cycle number, to each ratio per layer as well as five prompt completions per cycle. The merged model is automatically created, prompts triggered, then the merged model is destroyed (to prevent a crowd of merged models under testing maxing storage space). The goal is the telemetry for which merge ratios produce the most desirable results to the end user. After the number of cycles the user defined is completed - the script will present five completions for the prodivded prompt for every cycle produced. The user is prompted to examine the completions per cycle in the command line, and is further prompted to select the cycle number of the user's favorite five completions. Upon selecting - the system will rebuild the winning model and automatically move necessary files to the directory to have a composite, coherent, and desired model for the user through the power of random space search layer randomization offers.
 
 ## Practical Use Case
 
@@ -64,6 +64,7 @@ Model REVOLVER can be used by researchers, data scientists, and developers who w
 ```bash
 python model_revolver.py --firstmodel /path/to/first/model --secondmodel /path/to/second/model --mergedpath /path/to/save/merged/model
 ```
+Highly recommend making a .bat or .sh to make the process easier; system is command line based for semi automation as well as convenience purposes for those who do not have a GUI interface.
 
 ### Workflow
 
