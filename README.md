@@ -81,8 +81,11 @@ This script is CPU memory hungry and ironically not VRAM hungry. This is because
 ## Update Roadmap
 
 Re-implement non-llama model support (was intended for init release, will be patched soon)
+
 Decrease CPU RAM footprint
+
 Bring several options to the surface through commandline flags
+
 Vague potential to have a lightweight LLM auto-judge outputs based on what the user defines they are looking for in the results (ideally I want this tool to be 100% automatable)
 
 ## Friendly Message
