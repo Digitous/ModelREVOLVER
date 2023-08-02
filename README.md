@@ -74,6 +74,20 @@ To keep things simple, it is highly recommend to make a .bat or .sh to make the 
 
 I don't know anything about licenses. Do whatever you want with it, choose to be cool and give me credit, or don't. I don't really care. Enjoy mixtuning. -Digitous
 
+## Known issues and QoL to address
+
+This script is CPU memory hungry and ironically not VRAM hungry. This is because it loads both selected models in fp32 simultaneously when merge operations are being committed - this is on purpose for the sake of merging at the highest accuracy. On Windows, it should work even with a lower tier of RAM since it will dig into page file if it needs to - but prepare to go make a sandwich, watch TV, complain the damn thing is taking too long. After a cycle has made its modifications to model2 in memory, it will temporarily save it, copy files to the temp folder, and reload it to VRAM in 4 bit for a quick series of inferences based on the prompt. Every cycle will be like this. For reference, I have a 128GB DDR5 RAM and an RTX3090 24GB; however you will not need nearly this level of specs to use this tool, just a bit more patience than me. Thanks to 4 bit loading the amount of VRAM necessary is fairly low, even for a 13B model.
+
+## Update Roadmap
+
+Decrease CPU RAM footprint
+Bring several options to the surface through commandline flags
+Vague potential to have a lightweight LLM auto-judge outputs based on what the user defines they are looking for in the results (ideally I want this tool to be 100% automatable)
+
+## Friendly Message
+
+Feel free to contact me with insights and feedback. After all, I'm just an idiot with a keyboard who doesn't know when to quit. My ear is open to ideas.
+
 ---
 
 Feel free to modify the README to include additional details or sections as needed for your project.
